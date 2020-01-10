@@ -1,0 +1,91 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+<head>
+
+<title>Допополнительное задание по интернет технологиям</title>
+
+<style type="text/css">
+html, body {
+  width:  100%;
+  height: 100%;
+}
+
+#canvas {
+  background-color: #FFFFFF;
+  border: 1px solid black;
+  position: absolute;
+  top: 35px;
+}
+
+#status {
+  color: #000000;
+  position: absolute;
+  cursor: default;
+  font-family: Helvetica, Verdana, sans-serif;
+  font-weight: bold;
+  margin: 10px;
+  top: 30px;
+}
+
+#controls {
+  background-color: #AAAAAA;
+  position: absolute;
+  font-family: Helvetica, Verdana, sans-serif;
+  font-weight: bold;
+  font-size: smaller;
+  padding: 3px;
+  width: 596px;
+  height: 25px;
+}
+
+select {
+  font-family: monospace;
+  font-size: medium;
+}
+
+* {
+  padding:0;
+  margin:0;
+}
+</style>
+
+<script type="text/javascript" src="http://unionplatform.com/cdn/OrbiterMicro_latest.js"></script>
+
+<script src="Draw.js"></script>
+
+</head>
+
+<body>
+  <div id="controls">
+    Size:
+    <select id="thickness" class="fixed">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="10">10</option>
+      <option value="20">20</option>
+	  <option value="30">30</option>
+    </select>
+
+    Color:
+    <select id="color">
+      <option value="#FFFF00">Желтый</option>
+	  <option value="#000000">Черный</option>
+      <option value="#FF0000">Красный</option>
+      <option value="#008000">Зеленый</option>
+      <option value="#0000FF">Синий</option>
+      <option value="#FF4500">Оранжевый</option>
+	  <option value="#800080">Фиолетовый</option>
+	  <option value="#FFFFFF">Белый</option>
+    </select>
+  </div>
+  
+  <canvas id="canvas"></canvas>
+  
+  <div id="status"></div>
+</body>
+</html>
